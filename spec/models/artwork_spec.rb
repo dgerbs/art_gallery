@@ -8,7 +8,7 @@ describe Artwork do
 	it {should_not have_valid(:price).when(nil, "", 'foo')}
 
 	it {should have_valid(:on_sale_date).when(Date.today)}
-	it {should_not have_valid(:on_sale_date).when(nil, "", 1, 'today')}
+	it {should_not have_valid(:on_sale_date).when(nil, "", 'today')}
 
 	it {should belong_to(:artist)}
 	it {should belong_to(:genre)}
