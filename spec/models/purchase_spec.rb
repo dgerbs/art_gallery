@@ -1,5 +1,6 @@
 require 'spec_helper'
 
 describe Purchase do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it {should belong_to(:customer)}
+  it {should belong_to(:artwork)}
 end
