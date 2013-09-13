@@ -18,3 +18,4 @@ describe Artwork do
 
 	it {should have_one(:customer)}
 end
+
